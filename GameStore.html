@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda y blog para gamers, con los mejores productos y noticias del mundo de los videojuegos.">
+    <title>Tienda y Blog para Gamers</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu archivo CSS -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#acerca">Acerca de Nosotros</a></li>
+            </ul>
+        </nav>
+        <h1>Tienda y Blog para Gamers</h1>
+    </header>
+
+    <section id="tienda">
+        <h2>Tienda de Productos Gamer</h2>
+        <div class="productos">
+            <article class="producto">
+                <img src="producto1.jpg" alt="Producto 1">
+                <h3>Teclado Mecánico RGB</h3>
+                <p>Precio: $120.00</p>
+                <button>Añadir al carrito</button>
+            </article>
+            <article class="producto">
+                <img src="producto2.jpg" alt="Producto 2">
+                <h3>Ratón Gamer Inalámbrico</h3>
+                <p>Precio: $80.00</p>
+                <button>Añadir al carrito</button>
+            </article>
+            <!-- Añadir más productos según necesidad -->
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog de Noticias Gamer</h2>
+        <article class="post">
+            <h3>Novedades en la Próxima Generación de Consolas</h3>
+            <p>Fecha: 1 de octubre de 2024</p>
+            <p>Descubre las características de las consolas de nueva generación que se lanzarán próximamente...</p>
+            <a href="post1.html">Leer más</a>
+        </article>
+        <article class="post">
+            <h3>Los 10 Mejores Juegos de 2024</h3>
+            <p>Fecha: 15 de septiembre de 2024</p>
+            <p>Un análisis de los títulos más destacados del año, con recomendaciones de compra...</p>
+            <a href="post2.html">Leer más</a>
+        </article>
+        <!-- Añadir más artículos según necesidad -->
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="enviar_contacto.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tienda y Blog para Gamers. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://instagram.com">Instagram</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
